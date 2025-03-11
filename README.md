@@ -126,6 +126,8 @@ Para desplegar en un entorno de producción:
    npm install -g pm2
    pm2 start server.js --name "minecraft-panel"
    pm2 save
+
+   pm2 startup #Para iniciar automáticamente después de un reinicio 
    ```
 
 2. Considera usar un proxy inverso como Nginx para servir la aplicación de forma segura.
