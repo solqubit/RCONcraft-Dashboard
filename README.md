@@ -33,8 +33,8 @@ Para habilitar RCON en tu servidor Minecraft:
 
 1. Clona este repositorio o descárgalo
    ```bash
-   git clone https://github.com/tu-usuario/rcon-minecraft-panel.git
-   cd rcon-minecraft-panel
+   git clone https://github.com/solqubit/RCONcraft-Dashboard.git
+   cd RCONcraft-Dashboard
    ```
 
 2. Instala las dependencias
