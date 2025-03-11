@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel RCON Minecraft</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="dark-mode">
+    <!-- Overlay de carga -->
+    <div id="loading-overlay">
+        <div class="loader">
+            <div class="cube-loader">
+                <div class="cube-face"></div>
+                <div class="cube-face"></div>
+                <div class="cube-face"></div>
+                <div class="cube-face"></div>
+                <div class="cube-face"></div>
+                <div class="cube-face"></div>
+            </div>
+            <p>Cargando panel...</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header-container">
+            <h1><i class="fas fa-cube"></i> Panel RCON Minecraft</h1>
+            <div class="header-controls">
+                <button id="refreshButton" title="Actualizar datos"><i class="fas fa-sync-alt"></i></button>
+                <button id="darkModeToggle" title="Cambiar tema"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+        
+        <div class="server-status">
+            <div class="status-indicator online">
+                <span class="status-dot"></span>
+                <span class="status-text">Servidor en línea</span>
+            </div>
+            <div class="server-info">
+                <span><i class="fas fa-users"></i> <span id="playerCount">0</span> jugadores</span>
+            </div>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="players">
+                <i class="fas fa-users"></i> Gestión de Jugadores
+            </button>
+            <button class="tab-btn" data-tab="security">
+                <i class="fas fa-shield-alt"></i> Seguridad
+            </button>
+            <button class="tab-btn" data-tab="console">
+                <i class="fas fa-terminal"></i> Consola
+            </button>
+        </div>
+        
+        <!-- Contenedor para los componentes -->
+        <div id="components-container">
+            <!-- Componente de jugadores -->
+            <div class="tab-content active" id="players-tab">
+                <!-- Este contenido será cargado desde components/players.html -->
+            </div>
+            
+            <!-- Componente de seguridad -->
+            <div class="tab-content" id="security-tab">
+                <!-- Este contenido será cargado desde components/security.html -->
+            </div>
+            
+            <!-- Componente de consola -->
+            <div class="tab-content" id="console-tab">
+                <!-- Este contenido será cargado desde components/console.html -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Notificaciones -->
+    <div id="notification-container"></div>
+    
+    <!-- Cargador de módulos principal -->
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>

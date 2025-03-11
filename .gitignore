@@ -1,0 +1,45 @@
+# Dependencias
+node_modules/
+
+# Archivos de entorno
+# .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos de registro
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs
+*.log
+
+# Archivos temporales
+.tmp
+.temp
+
+# Carpetas de compilaciu00f3n
+/dist
+/build
+
+# Archivos de sistema
+.DS_Store
+Thumbsu00b.db
+
+# IDE y editores
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archivos de prueba
+coverage/
+
+# Archivos de configuraciu00f3n local que no deberu00edan ser compartidos
+config.local.js
+*_test.js
+test-*.js
+test-*.html
+test-preview.html
+standalone-preview.html

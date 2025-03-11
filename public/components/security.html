@@ -1,0 +1,42 @@
+<div class="admin-section">
+    <h2><i class="fas fa-shield-alt"></i> Seguridad y Moderación</h2>
+    
+    <div class="security-lists">
+        <div class="security-list">
+            <h3>Lista de Baneados</h3>
+            <button class="refresh-btn" id="refreshBans"><i class="fas fa-sync"></i> Actualizar</button>
+            <div class="list-container" id="banList">
+                <div class="loading">Cargando lista de baneados...</div>
+            </div>
+        </div>
+        
+        <div class="security-list">
+            <h3>Lista de IPs Baneadas</h3>
+            <button class="refresh-btn" id="refreshIpBans"><i class="fas fa-sync"></i> Actualizar</button>
+            <div class="list-container" id="ipBanList">
+                <div class="loading">Cargando lista de IPs baneadas...</div>
+            </div>
+        </div>
+        
+        <div class="security-list">
+            <h3>Whitelist</h3>
+            <button class="refresh-btn" id="refreshWhitelist"><i class="fas fa-sync"></i> Actualizar</button>
+            <div class="list-container" id="whitelistList">
+                <div class="loading">Cargando whitelist...</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="whitelist-actions">
+        <h3>Acciones de Whitelist</h3>
+        <div class="player-input">
+            <input type="text" id="whitelistName" placeholder="Nombre del jugador...">
+        </div>
+        <div class="command-buttons">
+            <button class="whitelist-btn" data-command="whitelist add"><i class="fas fa-user-plus"></i> Añadir a Whitelist</button>
+            <button class="whitelist-btn" data-command="whitelist remove"><i class="fas fa-user-minus"></i> Quitar de Whitelist</button>
+            <button class="whitelist-btn" data-command="whitelist on"><i class="fas fa-toggle-on"></i> Activar Whitelist</button>
+            <button class="whitelist-btn" data-command="whitelist off"><i class="fas fa-toggle-off"></i> Desactivar Whitelist</button>
+        </div>
+    </div>
+</div>
