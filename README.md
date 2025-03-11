@@ -8,7 +8,47 @@ Este es un panel web para administrar servidores de Minecraft a través del prot
 - Gestión de jugadores (teletransporte, permisos, moderación)
 - Consola para ejecutar comandos directos
 - Soporte para servidores locales y remotos
-- Tema claro/oscuro
+- Tema claro/oscuro (tema oscuro por defecto)
+
+## Características Detalladas
+
+### Panel Principal
+- **Estado del Servidor**: Muestra información en tiempo real sobre el servidor:
+  - Estado de conexión (online/offline)
+  - Jugadores conectados
+
+### Gestión de Jugadores
+- **Lista de Jugadores**: Visualiza todos los jugadores conectados con actualización automática
+- **Acciones Rápidas**: Botones de acceso rápido para:
+  - Expulsar jugador (kick)
+  - Banear jugador
+  - Dar OP (permisos de operador)
+  - Quitar OP
+
+### Sistema de Teletransporte
+- **Teletransporte Directo**: Mueve jugadores a coordenadas específicas
+  - Campos X, Y, Z para coordenadas exactas
+  - Mantiene el formato original de coordenadas para compatibilidad máxima
+- **Teletransporte entre Jugadores**: Teletransporta un jugador a la ubicación de otro
+- **Último Lugar de Muerte**: Permite teletransportar al jugador a su última ubicación de muerte
+
+### Consola RCON
+- **Consola Interactiva**: Terminal completa para ejecutar comandos de servidor
+  - Historial de comandos con desplazamiento
+  - Resaltado de sintaxis para mejor legibilidad
+  - Respuestas del servidor en tiempo real
+
+### Interfaz de Usuario
+- **Diseño Responsivo**: Funciona en dispositivos móviles, tabletas y escritorio
+- **Tema Oscuro/Claro**: Cambia entre temas para mayor comodidad visual
+  - Tema oscuro por defecto para uso nocturno
+  - Tema claro para entornos brillantes
+- **Notificaciones**: Sistema de alertas para acciones importantes
+- **Diseño Intuitivo**: Interfaz clara y fácil de usar para administradores nuevos y experimentados
+
+### Seguridad
+- **Conexión Segura**: Utiliza el protocolo RCON oficial de Minecraft
+- **Registro de Actividad**: Seguimiento de comandos ejecutados
 
 ## Requisitos
 
@@ -54,9 +94,9 @@ Para habilitar RCON en tu servidor Minecraft:
 
 Para conectarte a un servidor Minecraft en la nube o remoto:
 
-1. Edita el archivo `.env` y cambia `RCON_HOST` a la dirección IP pública o privada de tu servidor:
+1. Edita el archivo `.env` y cambia `RCON_HOST` a la dirección IP pública o privada de tu servidor, si es local puedes dejarlo `localhost`:
    ```
-   RCON_HOST=123.45.67.89
+   RCON_HOST=localhost
    ```
 
 2. Asegúrate de que el puerto RCON (por defecto 25575) esté abierto en el firewall del servidor.
